@@ -1,0 +1,6 @@
+vlib work
+vlog -f source_file.txt
+vsim -voptargs=+accs work.UART_TOP_TB
+add wave *
+add wave -position insertpoint sim:/UART_TOP_TB/DUT/FSM/#ALWAYS#13/*
+run -all
