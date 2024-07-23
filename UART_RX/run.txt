@@ -1,0 +1,14 @@
+vlib work 
+vlog -f source_file.txt
+vsim -voptargs=+accs work.UART_RX_TB
+add wave *
+add wave -position insertpoint sim:/UART_RX_TB/DUT/FSM/*
+add wave -position insertpoint sim:/UART_RX_TB/DUT/Bit_counter/*
+add wave -position insertpoint sim:/UART_RX_TB/DUT/Data_Sampling/*
+add wave -position insertpoint sim:/UART_RX_TB/DUT/Start_Check/*
+add wave -position insertpoint sim:/UART_RX_TB/DUT/Stop_Check/*
+add wave -position insertpoint sim:/UART_RX_TB/DUT/Deserializer/*
+add wave -position insertpoint sim:/UART_RX_TB/DUT/Parity_Check/*
+
+
+run -all

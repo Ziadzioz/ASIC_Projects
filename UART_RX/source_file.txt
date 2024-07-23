@@ -1,0 +1,9 @@
+Bit_counter.v
+Data_Sampling.v
+Deserializer.v
+FSM.v
+Parity_Check.v
+Start_Check.v
+Stop_Check.v
+UART_RX_TB.v
+UART_RX_TOP.v
