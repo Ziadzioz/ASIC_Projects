@@ -5,12 +5,9 @@ Welcome to the ASIC_Projects repository! This repository contains various projec
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Repository Structure](#repository-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Repository Structure](#ALU /// TCL /// UART System /// Garage)
+
+- [Contact](#zioza2002@gmail.com)
 
 ## Introduction
 
