@@ -132,8 +132,9 @@ begin
     
           for(j=0;j<(DATA_WIDTH+3);j=j+1)
              begin
-              #clock_period 
+             
                  OUT1[j] = Tx_OUT_TB ;
+                  #clock_period ;
              end
            EXPC_OUT1 [DATA_WIDTH+1] = DUT.parity.party_bit ;
         if(OUT1 == EXPC_OUT1 )  
@@ -152,8 +153,9 @@ begin
           
          for(j=0;j<DATA_WIDTH+2;j=j+1)
              begin
-               #clock_period 
+               
                  OUT2[j] = Tx_OUT_TB ;
+                 #clock_period ;
              end
         
         if(OUT2 == EXPC_OUT2 )  
@@ -170,8 +172,9 @@ begin
      begin
        for(j=0;j<DATA_WIDTH;j=j+1)
              begin
-              #clock_period
+            
                  OUT[j] = Tx_OUT_TB ;
+                   #clock_period;
              end
        
         if(OUT == EXPC_OUT )  

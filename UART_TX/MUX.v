@@ -1,6 +1,6 @@
 module MUX (
              input wire [2:0] mux_sel,
-             input wire CLK,RST,ser_data,party_bit,
+             input wire ser_data,party_bit,
              output reg Tx_OUT
             );
 

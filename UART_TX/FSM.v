@@ -29,6 +29,7 @@ module FSM (
                          begin
                             mux_sel = 5;
                             busy = 0;
+                            ser_en = 0 ;
                              
                              if (data_valid)
                                begin
@@ -40,7 +41,7 @@ module FSM (
                   start :
                            begin 
                              busy = 1  ;
-                             ser_en = 1 ;
+                             ser_en = 0 ;
                              mux_sel = 0;
                              next_state = data ;
                            end
