@@ -1,8 +1,0 @@
-****************************************************
-
-****************************************************
-
-Info:  guide_reg_constant 7 (Line: 82) Cannot find reference design 'serializer'.
-Info:  SVF Operation 7 (Line: 82) - reg_constant.  Status: rejected
-
-****************************************************

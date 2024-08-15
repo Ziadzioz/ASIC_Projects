@@ -1,7 +1,0 @@
-FSM.v
-MUX.v
-parity_bit.v
-serializer.v
-DFT_MUX.v
-UART_TB.v
-UART_TOP.v
