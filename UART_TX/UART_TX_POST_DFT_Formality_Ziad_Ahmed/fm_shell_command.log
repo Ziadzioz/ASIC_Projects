@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running fm_shell Version L-2016.03-SP1 for linux64 -- Apr 13, 2016
-#@ # Date:   Fri Aug  2 02:56:55 2024
+#@ # Date:   Mon Aug  5 01:30:22 2024
 #@ # Run by: IC@IC
 #@ 
 
@@ -90,17 +90,14 @@ source -echo -verbose fm_script.tcl
 #@ ###################################################################
 #@ 
 #@ # Read Implementation Design Files
-#@ read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/FSM.v }
-#@ read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/UART_TOP.v }
-#@ read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/MUX.v }
-#@ read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/serializer.v }
-#@ read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/parity_bit.v }
-#@ read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/DFT_MUX.v }
+#@ read_verilog -netlist -container i { /home/IC/Labs/Ass_DFT_3/dft/UART_TX.v }
+#@ 
 #@ # Read Implementation technology libraries
 #@ read_db [list $SSLIB $TTLIB $FFLIB]
 #@ 
 #@ # set the top Implementation Design
-#@ set_top i:WORK/UART_TOP
+#@ set_implementation_design UART_TOP
+#@ set_top UART_TOP
 #@ 
 #@ 
 #@ ########################## Don't verify ###########################
@@ -149,3 +146,4 @@ source -echo -verbose fm_script.tcl
 #@ 
 #@ # -- End source fm_script.tcl
 
+exit

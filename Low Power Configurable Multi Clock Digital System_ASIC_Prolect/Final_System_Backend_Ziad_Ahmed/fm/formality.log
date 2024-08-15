@@ -1,0 +1,25 @@
+****************************************************
+
+Info:  Net r:/WORK/UART_TX_TOP_DATA_WIDTH8/parity.CLK is undriven.
+Info:  Net r:/WORK/UART_TX_TOP_DATA_WIDTH8/parity.RST is undriven.
+Info:  Net r:/WORK/UART_TX_TOP_DATA_WIDTH8/parity.busy is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW_div_uns_0/remainder[7] is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW_div_uns_0/remainder[6] is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW_div_uns_0/remainder[5] is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW_div_uns_0/remainder[4] is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW_div_uns_0/remainder[3] is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW_div_uns_0/remainder[2] is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW_div_uns_0/remainder[1] is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW_div_uns_0/remainder[0] is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW_div_uns_0/divide_by_0 is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW01_sub_0/CO is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW01_add_0/CO is undriven.
+Info:  Net i:/WORK/ALU_RTL_DATA_WIDTH8_DW01_add_1/CO is undriven.
+Info:  guide_uniquify 90 (Line: 608)  Cannot find object "CLK_DIV_RX/U12" in design 'SYSTEM_TOP'.
+Info:  SVF Operation 90 (Line: 608) - uniquify.  Status: rejected
+Info:  guide_uniquify 90 (Line: 608)  Cannot find object "CLK_DIV_TX/U12" in design 'SYSTEM_TOP'.
+Info:  guide_uniquify 98 (Line: 648)  Cannot find object "ALU_RTL/dp_cluster_0/mult_21" in design 'SYSTEM_TOP'.
+Info:  Pre-verification of r:/WORK/ALU_RTL_DATA_WIDTH8/div_22 SUCCEEDED.
+Info:  Pre-verification of r:/WORK/ALU_RTL_DATA_WIDTH8/mult_21 SUCCEEDED.
+****************************************************
+

@@ -1,10 +1,9 @@
 ****************************************************
 
-****************************************************
-
 Info:  Net r:/WORK/UART_TOP/SO is undriven.
-Info:  Net i:/WORK/UART_TOP/SO is undriven.
+Info:  Net r:/WORK/UART_TOP/SO is undriven.
 Info:  guide_reg_constant 8 (Line: 89) Cannot find reference design 'serializer'.
 Info:  SVF Operation 8 (Line: 89) - reg_constant.  Status: rejected
 
 ****************************************************
+

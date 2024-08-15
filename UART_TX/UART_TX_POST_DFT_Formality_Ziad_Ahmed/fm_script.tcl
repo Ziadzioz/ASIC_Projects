@@ -38,17 +38,14 @@ set_top r:WORK/UART_TOP
 ###################################################################
 
 # Read Implementation Design Files
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/FSM.v }
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/UART_TOP.v }
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/MUX.v }
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/serializer.v }
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/parity_bit.v }
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/DFT_MUX.v }
+read_verilog -netlist -container i { /home/IC/Labs/Ass_DFT_3/dft/UART_TX.v }
+
 # Read Implementation technology libraries
 read_db [list $SSLIB $TTLIB $FFLIB]
 
 # set the top Implementation Design
-set_top i:WORK/UART_TOP
+set_implementation_design UART_TOP
+set_top UART_TOP
 
 
 ########################## Don't verify ###########################

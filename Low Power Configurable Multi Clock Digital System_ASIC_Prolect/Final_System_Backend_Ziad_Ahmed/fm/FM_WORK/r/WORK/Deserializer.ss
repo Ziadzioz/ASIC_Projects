@@ -1,0 +1,1 @@
+-1 12 51 13 4 78 5117 22 2 FMR_ELAB-117/home/IC/Projects/SYSTEM_PROJECT/rtl/Deserializer.v/DeserializerDATAvariable 'DATA' read before write may cause simulation and synthesis mismatch.

@@ -1,0 +1,88 @@
+ 
+****************************************
+Report : area
+Design : SYSTEM_TOP
+Version: K-2015.06
+Date   : Thu Aug 15 20:34:21 2024
+****************************************
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/IC/Projects/SYSTEM_PROJECT/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+Number of ports:                          785
+Number of nets:                          2576
+Number of cells:                         1765
+Number of combinational cells:           1356
+Number of sequential cells:               370
+Number of macros/black boxes:               0
+Number of buf/inv:                        225
+Number of references:                      16
+
+Combinational area:              13079.020728
+Buf/Inv area:                      835.457020
+Noncombinational area:            9017.051987
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 22096.072715
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ----------------------------------------------------------
+SYSTEM_TOP                        22096.0727    100.0     20.0039     0.0000  0.0000  SYSTEM_TOP
+ALU_RTL                            5519.8997     25.0   1023.7290   440.0858  0.0000  ALU_RTL_DATA_WIDTH8
+ALU_RTL/add_19                      231.8099      1.0    231.8099     0.0000  0.0000  ALU_RTL_DATA_WIDTH8_DW01_add_0
+ALU_RTL/div_22                     1437.9274      6.5   1437.9274     0.0000  0.0000  ALU_RTL_DATA_WIDTH8_DW_div_uns_0
+ALU_RTL/mult_21                    2120.4134      9.6   1914.4909     0.0000  0.0000  ALU_RTL_DATA_WIDTH8_DW02_mult_0
+ALU_RTL/mult_21/FS_1                205.9225      0.9    205.9225     0.0000  0.0000  ALU_RTL_DATA_WIDTH8_DW01_add_1
+ALU_RTL/sub_20                      265.9342      1.2    265.9342     0.0000  0.0000  ALU_RTL_DATA_WIDTH8_DW01_sub_0
+CLK_DIV_RX                          868.4046      3.9    407.1382   258.8740  0.0000  CLK_DIV_1
+CLK_DIV_RX/add_36                    95.3127      0.4     95.3127     0.0000  0.0000  CLK_DIV_1_DW01_inc_1
+CLK_DIV_RX/add_43                   107.0797      0.5    107.0797     0.0000  0.0000  CLK_DIV_1_DW01_inc_0
+CLK_DIV_TX                          868.4046      3.9    407.1382   258.8740  0.0000  CLK_DIV_0
+CLK_DIV_TX/add_36                    95.3127      0.4     95.3127     0.0000  0.0000  CLK_DIV_0_DW01_inc_1
+CLK_DIV_TX/add_43                   107.0797      0.5    107.0797     0.0000  0.0000  CLK_DIV_0_DW01_inc_0
+CLOCK_GATING                         40.0078      0.2      0.0000    40.0078  0.0000  CLOCK_GATING
+DATA_SYNC                           416.5518      1.9     84.7224   331.8294  0.0000  DATA_SYNC_NUM_STAGES2_BUS_WIDTH8
+FIFO_TOP                           4047.8480     18.3      0.0000     0.0000  0.0000  FIFO_TOP_DATA_WIDTH_TOP8_FIFO_DEPTH_TOP8_ADDRESS_BITS_TOP3
+FIFO_TOP/DF_SYNC                    414.1984      1.9      0.0000   414.1984  0.0000  DF_SYNC_ADDRESS_BITS3
+FIFO_TOP/FIFO_BUFFER               3104.1346     14.0   1240.2418  1863.8928  0.0000  FIFO_BUFFER_DATA_WIDTH8_FIFO_DEPTH8_ADDRESS_BITS3
+FIFO_TOP/FIFO_RD                    264.7575      1.2    160.0312   104.7263  0.0000  FIFO_RD_ADDRESS_BITS3
+FIFO_TOP/FIFO_WR                    264.7575      1.2    161.2079   103.5496  0.0000  FIFO_WR_ADDRESS_BITS3
+PRESCALE_BLOCK                       74.1321      0.3     74.1321     0.0000  0.0000  PRESCALE_BLOCK
+PULSE_GENRATOR_BLOCK                 48.2447      0.2      5.8835    42.3612  0.0000  PULSE_GENRATOR_BLOCK
+RESET_SYNC_1                         77.6622      0.4      0.0000    77.6622  0.0000  RESET_SYNC_NUM_STAGES2_0
+RESET_SYNC_2                         77.6622      0.4      0.0000    77.6622  0.0000  RESET_SYNC_NUM_STAGES2_1
+Reg_file                           6025.8807     27.3   2516.9614  3508.9194  0.0000  Reg_file_DATA_WIDTH8_ADDRESS_BITS3
+SYSTEM_CONTROL                     1067.2669      4.8    675.4258   391.8411  0.0000  SYSTEM_CONTROL_DATA_WIDTH8
+SYS_UART_TOP                       2944.1034     13.3     10.5903     0.0000  0.0000  SYS_UART_TOP_DATA_WIDTH8
+SYS_UART_TOP/UART_RX_TOP           2135.7105      9.7      7.0602     0.0000  0.0000  UART_RX_TOP
+SYS_UART_TOP/UART_RX_TOP/Bit_counter
+                                    624.8277      2.8    365.9537   258.8740  0.0000  Bit_counter
+SYS_UART_TOP/UART_RX_TOP/Data_Sampling
+                                    563.6393      2.6    458.9130   104.7263  0.0000  Data_Sampling
+SYS_UART_TOP/UART_RX_TOP/Deserializer
+                                    496.5674      2.2    301.2352   195.3322  0.0000  Deserializer
+SYS_UART_TOP/UART_RX_TOP/FSM        315.3556      1.4    237.6934    77.6622  0.0000  FSM
+SYS_UART_TOP/UART_RX_TOP/Parity_Check
+                                     58.8350      0.3     32.9476    25.8874  0.0000  Parity_Check
+SYS_UART_TOP/UART_RX_TOP/Start_Check
+                                     31.7709      0.1      5.8835    25.8874  0.0000  Start_Check
+SYS_UART_TOP/UART_RX_TOP/Stop_Check
+                                     37.6544      0.2     11.7670    25.8874  0.0000  Stop_Check
+SYS_UART_TOP/UART_TX_TOP            797.8026      3.6      0.0000     0.0000  0.0000  UART_TX_TOP_DATA_WIDTH8
+SYS_UART_TOP/UART_TX_TOP/FSM        156.5011      0.7     78.8389    77.6622  0.0000  FSM_TX
+SYS_UART_TOP/UART_TX_TOP/MUX         17.6505      0.1     17.6505     0.0000  0.0000  MUX
+SYS_UART_TOP/UART_TX_TOP/parity     127.0836      0.6    101.1962    25.8874  0.0000  parity_calc_DATA_WIDTH8
+SYS_UART_TOP/UART_TX_TOP/serial     496.5674      2.2    211.8060   284.7614  0.0000  serializer_DATA_WIDTH8
+--------------------------------  ----------  -------  ----------  ---------  ------  ----------------------------------------------------------
+Total                                                  13079.0207  9017.0520  0.0000
+
+1

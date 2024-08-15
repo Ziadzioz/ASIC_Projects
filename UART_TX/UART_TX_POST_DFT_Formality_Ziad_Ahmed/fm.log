@@ -19,7 +19,7 @@
 
 Build: 4031317
 Hostname: IC (RHEL64)
-Current time: Fri Aug  2 02:56:55 2024
+Current time: Mon Aug  5 01:30:21 2024
 
 Loading db file '/opt/Synopsys/Formality2016/libraries/syn/gtech.db'
 ###################################################################
@@ -109,27 +109,9 @@ Reference design set to 'r:/WORK/UART_TOP'
 #################### Implementation Container #####################
 ###################################################################
 # Read Implementation Design Files
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/FSM.v }
-Initializing DesignWare ...
-Initialization Complete
-Loading verilog file '/home/IC/Labs/Ass_DFT_1/rtl/FSM.v'
-Current container set to 'i'
-1
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/UART_TOP.v }
-Loading verilog file '/home/IC/Labs/Ass_DFT_1/rtl/UART_TOP.v'
-1
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/MUX.v }
-Loading verilog file '/home/IC/Labs/Ass_DFT_1/rtl/MUX.v'
-1
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/serializer.v }
-Loading verilog file '/home/IC/Labs/Ass_DFT_1/rtl/serializer.v'
-1
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/parity_bit.v }
-Loading verilog file '/home/IC/Labs/Ass_DFT_1/rtl/parity_bit.v'
-1
-read_verilog -container i -libname WORK -05 { /home/IC/Labs/Ass_DFT_1/rtl/DFT_MUX.v }
-Loading verilog file '/home/IC/Labs/Ass_DFT_1/rtl/DFT_MUX.v'
-1
+read_verilog -netlist -container i { /home/IC/Labs/Ass_DFT_3/dft/UART_TX.v }
+Error: Can't open file /home/IC/Labs/Ass_DFT_3/dft/UART_TX.v. (FM-016)
+0
 # Read Implementation technology libraries
 read_db [list $SSLIB $TTLIB $FFLIB]
 Loading db file '/home/IC/Labs/Ass_DFT_1/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db'
@@ -1991,38 +1973,12 @@ Loading new version of design 'XOR3X8M' into shared technology library 'SCMETRO_
 Loading new version of design 'XOR3XLM' into shared technology library 'SCMETRO_TSMC_CL013G_RVT_FF_1P32V_M40C'
 1
 # set the top Implementation Design
-set_top i:WORK/UART_TOP
-Setting top design to 'i:/WORK/UART_TOP'
-Status:   Elaborating design UART_TOP   ...  
-Status:   Elaborating design DFT_MUX   ...  
-Status:   Elaborating design serializer  DATA_WIDTH=8 ...  
-Warning: Index may take values outside array bound, may cause simulation mismatch .. (Signal: P_DATA Block: /serializer File: /home/IC/Labs/Ass_DFT_1/rtl/serializer.v Line: 42)  (FMR_ELAB-147)
-Information: Created design named 'serializer_DATA_WIDTH8'. (FE-LINK-13)
-Status:   Elaborating design FSM   ...  
-Status:   Elaborating design parity_calc  DATA_WIDTH=8 ...  
-Information: Created design named 'parity_calc_DATA_WIDTH8'. (FE-LINK-13)
-Status:   Elaborating design MUX   ...  
-Status:  Implementing inferred operators...
-
-************ Library Checking Summary ************
-Warning:  3 unlinked power cell(s) with unread pg pins.
-        Use 'report_libraries -defects all' for more details.
-**************************************************
-
-Top design set to 'i:/WORK/UART_TOP' with warnings
-   ATTENTION: RTL interpretation messages were produced during link.
-              Verification results may disagree with a logic simulator.
-
-************ RTL Interpretation Summary ************
-************ Design: i:/WORK/UART_TOP
-1 FMR_ELAB-147 message produced    
-
-Please refer to the Formality log file for more details,
-or execute report_hdlin_mismatches.
-****************************************************
-
-Implementation design set to 'i:/WORK/UART_TOP'
+set_implementation_design UART_TOP
+Implementation design set to 'r:/WORK/UART_TOP'
 1
+set_top UART_TOP
+Error: Top design is already set to 'r:/WORK/UART_TOP'.  Failed to set top design to 'r:/WORK/UART_TOP'. (FM-157)
+0
 ########################## Don't verify ###########################
 # do not verify  scan out port a compare point as it is existed only after synthesis and not existed in the RTL
 #scan_out
@@ -2030,8 +1986,8 @@ set_dont_verify_points -type port r:/WORK/*/*SO*
 Set don't verify point 'r:/WORK/UART_TOP/SO'
 1
 set_dont_verify_points -type port i:/WORK/*/*SO*
-Set don't verify point 'i:/WORK/UART_TOP/SO'
-1
+Error: Unknown name: 'i:/WORK/*/*SO*' (FM-036)
+0
 ############################### contants #####################################
 # all atpg enable (test_mode, scan_enable) are zero during formal compare
 #test_mode
@@ -2039,29 +1995,29 @@ set_constant r:/WORK/*/*test_mode* 0
 Set 'r:/WORK/UART_TOP/test_mode' to constant 0
 1
 set_constant i:/WORK/*/*test_mode* 0
-Set 'i:/WORK/UART_TOP/test_mode' to constant 0
-1
+Error: Unknown name: 'i:/WORK/*/*test_mode*' (FM-036)
+0
 #scan_enable
 set_constant r:/WORK/*/*SE* 0
 Set 'r:/WORK/UART_TOP/SE' to constant 0
 1
 set_constant i:/WORK/*/*SE* 0
-Set 'i:/WORK/UART_TOP/SE' to constant 0
-1
+Error: Unknown name: 'i:/WORK/*/*SE*' (FM-036)
+0
 ###################### Matching Compare points ####################
 match
 Reference design is 'r:/WORK/UART_TOP'
-Implementation design is 'i:/WORK/UART_TOP'
+Implementation design is 'r:/WORK/UART_TOP'
 Status:  Checking designs...
     Warning: 1 (1) undriven nets found in reference (implementation) design; see formality.log for list (FM-399)
 Status:  Building verification models...
 Status:  Processing Guide Commands...
     Set 'r:/WORK/UART_TOP/SE' to constant 0    
-    Set 'i:/WORK/UART_TOP/SE' to constant 0    
+    Set 'r:/WORK/UART_TOP/SE' to constant 0    ; previous value was also 0
     Set 'r:/WORK/UART_TOP/test_mode' to constant 1    
-    Set 'i:/WORK/UART_TOP/test_mode' to constant 1    
-    Set 'i:/WORK/UART_TOP/SE' to constant 0    ; previous value was also 0
-    Set 'i:/WORK/UART_TOP/test_mode' to constant 1    ; previous value was also 1
+    Set 'r:/WORK/UART_TOP/test_mode' to constant 1    ; previous value was also 1
+    Set 'r:/WORK/UART_TOP/SE' to constant 0    ; previous value was also 0
+    Set 'r:/WORK/UART_TOP/test_mode' to constant 1    ; previous value was also 1
 
 ***************************** Guidance Summary *****************************
                                          Status
@@ -2089,7 +2045,8 @@ SVF files produced:
 Status:  Matching...
     
 *********************************** Matching Results ***********************************    
- 9 Compare points matched by name    
+ 9 Compare points matched previously    
+ 0 Compare points matched by name    
  0 Compare points matched by signature analysis    
  0 Compare points matched by topology    
  13 Matched primary inputs, black-box outputs    
@@ -2101,10 +2058,12 @@ Status:  Matching...
 ######################### Run Verification ########################
 set successful [verify]
 Reference design is 'r:/WORK/UART_TOP'
-Implementation design is 'i:/WORK/UART_TOP'
+Implementation design is 'r:/WORK/UART_TOP'
+Warning: Self-compare: reference and implementation are the same object: r:/WORK/UART_TOP (FM-520)
     
 *********************************** Matching Results ***********************************    
- 9 Compare points matched by name    
+ 9 Compare points matched previously    
+ 0 Compare points matched by name    
  0 Compare points matched by signature analysis    
  0 Compare points matched by topology    
  13 Matched primary inputs, black-box outputs    
@@ -2115,14 +2074,13 @@ Implementation design is 'i:/WORK/UART_TOP'
 Status:  Verifying...
 
 ************ RTL Interpretation Summary ************
-************ Reference:      r:/WORK/UART_TOP
-1 FMR_ELAB-147 message produced    
-************ Implementation: i:/WORK/UART_TOP
+************ Design: r:/WORK/UART_TOP
 1 FMR_ELAB-147 message produced    
 
 Please refer to the Formality log file for more details,
 or execute report_hdlin_mismatches.
 ****************************************************
+
 
 ***************************** Synopsys Auto Setup Summary ******************************
 
@@ -2159,7 +2117,7 @@ Verification SUCCEEDED
               Verification results may disagree with a logic simulator.
 -----------------------------------------------------------------------
  Reference design: r:/WORK/UART_TOP
- Implementation design: i:/WORK/UART_TOP
+ Implementation design: r:/WORK/UART_TOP
  9 Passing compare points
 ----------------------------------------------------------------------------------------
 Matched Compare Points     BBPin    Loop   BBNet     Cut    Port     DFF     LAT   TOTAL
@@ -2183,4 +2141,11 @@ start_gui
      1  source -echo -verbose fm_script.tcl
 1
 1
-fm_shell (verify)> 
+fm_shell (verify)> exit
+
+Maximum memory usage for this session: 452676 KB
+CPU usage for this session: 3.61 seconds
+Current time: Mon Aug  5 01:31:12 2024
+Elapsed time: 61 seconds
+
+Thank you for using Formality (R)!

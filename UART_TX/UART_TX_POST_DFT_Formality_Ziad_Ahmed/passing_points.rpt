@@ -2,39 +2,39 @@
 Report         : passing_points
 
 Reference      : r:/WORK/UART_TOP
-Implementation : i:/WORK/UART_TOP
+Implementation : r:/WORK/UART_TOP
 Version        : L-2016.03-SP1
-Date           : Fri Aug  2 02:56:58 2024
+Date           : Mon Aug  5 01:30:24 2024
 **************************************************
 
 9 Passing compare points:
 
   Ref  DFF        r:/WORK/UART_TOP/FSM/current_state_reg[0]
-  Impl DFF        i:/WORK/UART_TOP/FSM/current_state_reg[0]
+  Impl DFF        r:/WORK/UART_TOP/FSM/current_state_reg[0]
 
   Ref  DFF        r:/WORK/UART_TOP/FSM/current_state_reg[1]
-  Impl DFF        i:/WORK/UART_TOP/FSM/current_state_reg[1]
+  Impl DFF        r:/WORK/UART_TOP/FSM/current_state_reg[1]
 
   Ref  DFF        r:/WORK/UART_TOP/FSM/current_state_reg[2]
-  Impl DFF        i:/WORK/UART_TOP/FSM/current_state_reg[2]
+  Impl DFF        r:/WORK/UART_TOP/FSM/current_state_reg[2]
 
   Ref  DFF        r:/WORK/UART_TOP/serial/counter_reg[0]
-  Impl DFF        i:/WORK/UART_TOP/serial/counter_reg[0]
+  Impl DFF        r:/WORK/UART_TOP/serial/counter_reg[0]
 
   Ref  DFF        r:/WORK/UART_TOP/serial/counter_reg[1]
-  Impl DFF        i:/WORK/UART_TOP/serial/counter_reg[1]
+  Impl DFF        r:/WORK/UART_TOP/serial/counter_reg[1]
 
   Ref  DFF        r:/WORK/UART_TOP/serial/counter_reg[2]
-  Impl DFF        i:/WORK/UART_TOP/serial/counter_reg[2]
+  Impl DFF        r:/WORK/UART_TOP/serial/counter_reg[2]
 
   Ref  DFF        r:/WORK/UART_TOP/serial/counter_reg[3]
-  Impl DFF        i:/WORK/UART_TOP/serial/counter_reg[3]
+  Impl DFF        r:/WORK/UART_TOP/serial/counter_reg[3]
 
   Ref  Port       r:/WORK/UART_TOP/Tx_OUT
-  Impl Port       i:/WORK/UART_TOP/Tx_OUT
+  Impl Port       r:/WORK/UART_TOP/Tx_OUT
 
   Ref  Port       r:/WORK/UART_TOP/busy
-  Impl Port       i:/WORK/UART_TOP/busy
+  Impl Port       r:/WORK/UART_TOP/busy
 
  [BBNet: multiply-driven net
   BBPin: black-box pin
