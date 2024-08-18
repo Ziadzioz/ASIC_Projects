@@ -1,0 +1,1 @@
+-1 12 49 11 11 75 5147 55 2 FMR_ELAB-147/home/IC/Projects/SYSTEM_PROJECT/rtl/serializer.v/serializerP_DATA_COMPIndex may take values outside array bound, may cause simulation mismatch ..

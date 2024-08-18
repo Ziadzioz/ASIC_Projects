@@ -1,0 +1,52 @@
+# Format: clock  timeReq  slackR/slackF  setupR/setupF  instName/pinName   # cycle(s)
+@(R)->ALU_CLK(R)	19.410   17.745/*        0.390/*         ALU_RTL/\ALU_OUT_reg[0] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.745/*        0.390/*         ALU_RTL/\ALU_OUT_reg[1] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.746/*        0.390/*         ALU_RTL/\ALU_OUT_reg[2] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.746/*        0.390/*         ALU_RTL/\ALU_OUT_reg[4] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.746/*        0.390/*         ALU_RTL/\ALU_OUT_reg[5] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.747/*        0.390/*         ALU_RTL/\ALU_OUT_reg[15] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.747/*        0.390/*         ALU_RTL/\ALU_OUT_reg[10] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.747/*        0.390/*         ALU_RTL/\ALU_OUT_reg[13] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.747/*        0.390/*         ALU_RTL/\ALU_OUT_reg[7] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.747/*        0.390/*         ALU_RTL/\ALU_OUT_reg[6] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.747/*        0.390/*         ALU_RTL/\ALU_OUT_reg[14] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.747/*        0.390/*         ALU_RTL/\ALU_OUT_reg[12] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.747/*        0.390/*         ALU_RTL/\ALU_OUT_reg[11] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.747/*        0.390/*         ALU_RTL/\ALU_OUT_reg[8] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.748/*        0.390/*         ALU_RTL/\ALU_OUT_reg[3] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.748/*        0.390/*         ALU_RTL/\ALU_OUT_reg[9] /RN    1
+@(R)->ALU_CLK(R)	19.410   17.748/*        0.390/*         ALU_RTL/ALU_OUT_VALID_reg/RN    1
+ALU_CLK(R)->ALU_CLK(R)	19.268   */18.776        */0.532         ALU_RTL/\ALU_OUT_reg[0] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.276   */18.820        */0.524         ALU_RTL/\ALU_OUT_reg[4] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.277   */18.828        */0.523         ALU_RTL/\ALU_OUT_reg[11] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.277   */18.830        */0.523         ALU_RTL/\ALU_OUT_reg[3] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.278   */18.836        */0.522         ALU_RTL/\ALU_OUT_reg[10] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.278   */18.837        */0.521         ALU_RTL/\ALU_OUT_reg[7] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.279   */18.840        */0.521         ALU_RTL/\ALU_OUT_reg[14] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.279   */18.841        */0.521         ALU_RTL/\ALU_OUT_reg[13] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.279   */18.841        */0.521         ALU_RTL/\ALU_OUT_reg[15] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.279   */18.842        */0.521         ALU_RTL/\ALU_OUT_reg[8] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.279   */18.843        */0.521         ALU_RTL/\ALU_OUT_reg[12] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.280   */18.844        */0.520         ALU_RTL/\ALU_OUT_reg[5] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.280   */18.844        */0.520         ALU_RTL/\ALU_OUT_reg[6] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.280   */18.846        */0.520         ALU_RTL/\ALU_OUT_reg[2] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.280   */18.846        */0.520         ALU_RTL/\ALU_OUT_reg[1] /SI    1
+ALU_CLK(R)->ALU_CLK(R)	19.280   */18.846        */0.520         ALU_RTL/\ALU_OUT_reg[9] /SI    1
+@(R)->ALU_CLK(R)	19.258   19.240/*        0.542/*         ALU_RTL/\ALU_OUT_reg[1] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.240/*        0.542/*         ALU_RTL/\ALU_OUT_reg[2] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.240/*        0.542/*         ALU_RTL/\ALU_OUT_reg[0] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.240/*        0.542/*         ALU_RTL/\ALU_OUT_reg[4] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.240/*        0.542/*         ALU_RTL/\ALU_OUT_reg[5] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.240/*        0.542/*         ALU_RTL/\ALU_OUT_reg[7] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.240/*        0.542/*         ALU_RTL/\ALU_OUT_reg[6] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.240/*        0.542/*         ALU_RTL/\ALU_OUT_reg[8] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.241/*        0.542/*         ALU_RTL/\ALU_OUT_reg[3] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.241/*        0.542/*         ALU_RTL/\ALU_OUT_reg[9] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.242/*        0.542/*         ALU_RTL/\ALU_OUT_reg[11] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.243/*        0.542/*         ALU_RTL/\ALU_OUT_reg[12] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.243/*        0.542/*         ALU_RTL/\ALU_OUT_reg[13] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.243/*        0.542/*         ALU_RTL/\ALU_OUT_reg[14] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.244/*        0.542/*         ALU_RTL/\ALU_OUT_reg[15] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.244/*        0.542/*         ALU_RTL/\ALU_OUT_reg[10] /SE    1
+@(R)->ALU_CLK(R)	19.258   19.244/*        0.542/*         ALU_RTL/ALU_OUT_VALID_reg/SE    1
+@(R)->ALU_CLK(R)	19.297   */19.297        */0.503         ALU_RTL/ALU_OUT_VALID_reg/SI    1

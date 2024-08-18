@@ -1,0 +1,29 @@
+
+
+# LEF File for Accumulated Process Antenna Effects at the Boundary Pins
+# *********************************************************************
+
+VERSION 5.5 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+
+MACRO SYSTEM_TOP 
+  PIN REF_CLK 
+  END REF_CLK
+  PIN UART_CLK 
+  END UART_CLK
+  PIN test_mode 
+  END test_mode
+  PIN SE 
+  END SE
+  PIN RX_IN 
+  END RX_IN
+  PIN Tx_OUT 
+  END Tx_OUT
+  PIN Parity_error 
+  END Parity_error
+  PIN Stop_error 
+  END Stop_error
+END SYSTEM_TOP
+
+END LIBRARY

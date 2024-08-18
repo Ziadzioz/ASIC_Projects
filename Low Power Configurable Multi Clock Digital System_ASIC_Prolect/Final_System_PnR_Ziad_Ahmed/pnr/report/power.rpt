@@ -1,0 +1,77 @@
+*----------------------------------------------------------------------------------------
+*	First Encounter 08.10-p004_1 (32bit) 11/04/2008 14:34 (Linux 2.6)
+*	
+*
+* 	Date & Time:	2024-Aug-17 16:29:21 (2024-Aug-17 13:29:21 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: SYSTEM_TOP
+*
+*	Liberty Libraries used: 
+*	        ../std_cells/libs/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.lib
+*
+*	Power Domain used: 
+*		Rail:        VDD 	Voltage:       1.08 
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: N.A.
+*
+*       Clock Gates Enable Activity: N.A.
+*
+*       Primary Input Activity: 0.200000
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile report/power.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:      0.1796      66.56%
+Total Switching Power:    0.07344      27.21%
+Total Leakage Power:      0.01682       6.23%
+Total Power:               0.2699 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.1337     0.01778    0.005495       0.157       58.17 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                    0.04593     0.05566     0.01132      0.1129       41.83 
+-----------------------------------------------------------------------------------------
+Total                             0.1796     0.07344     0.01682      0.2699         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      1.08     0.1796     0.07344     0.01682      0.2699         100 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:            REF_CLK__L1_I0 (CLKINVX40M): 	  0.006062 
+* 		Highest Leakage Power:      scanclkuartrx__L1_I0 (CLKBUFX40M): 	 5.483e-05 
+* 		Total Cap: 	2.10646e-11 F
+* 		Total instances in design:  1745
+* 		Total instances in design with no power:     7
+*          Total instances in design with no activty:     7
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

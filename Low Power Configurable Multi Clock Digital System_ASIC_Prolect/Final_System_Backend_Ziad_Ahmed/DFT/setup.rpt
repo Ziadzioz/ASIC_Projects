@@ -1,0 +1,479 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 100
+Design : SYSTEM_TOP
+Version: K-2015.06
+Date   : Sat Aug 17 18:02:09 2024
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+  Startpoint: ALU_RTL/ALU_OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[0]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_VALID_reg/CK (SDFFRQX2M)                0.00       0.00 r
+  ALU_RTL/ALU_OUT_VALID_reg/Q (SDFFRQX2M)                 0.45       0.45 f
+  ALU_RTL/ALU_OUT_reg[0]/SI (SDFFRQX2M)                   0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[0]/CK (SDFFRQX2M)                   0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.82
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[7]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[8]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[7]/CK (SDFFRQX2M)                   0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[7]/Q (SDFFRQX2M)                    0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[8]/SI (SDFFRQX2M)                   0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[8]/CK (SDFFRQX2M)                   0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[6]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[7]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[6]/CK (SDFFRQX2M)                   0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[6]/Q (SDFFRQX2M)                    0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[7]/SI (SDFFRQX2M)                   0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[7]/CK (SDFFRQX2M)                   0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[5]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[6]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[5]/CK (SDFFRQX2M)                   0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[5]/Q (SDFFRQX2M)                    0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[6]/SI (SDFFRQX2M)                   0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[6]/CK (SDFFRQX2M)                   0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[4]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[5]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[4]/CK (SDFFRQX2M)                   0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[4]/Q (SDFFRQX2M)                    0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[5]/SI (SDFFRQX2M)                   0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[5]/CK (SDFFRQX2M)                   0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[3]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[4]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[3]/CK (SDFFRQX2M)                   0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[3]/Q (SDFFRQX2M)                    0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[4]/SI (SDFFRQX2M)                   0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[4]/CK (SDFFRQX2M)                   0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[2]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[3]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[2]/CK (SDFFRQX2M)                   0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[2]/Q (SDFFRQX2M)                    0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[3]/SI (SDFFRQX2M)                   0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[3]/CK (SDFFRQX2M)                   0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[1]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[2]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[1]/CK (SDFFRQX2M)                   0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[1]/Q (SDFFRQX2M)                    0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[2]/SI (SDFFRQX2M)                   0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[2]/CK (SDFFRQX2M)                   0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[0]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[1]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[0]/CK (SDFFRQX2M)                   0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[0]/Q (SDFFRQX2M)                    0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[1]/SI (SDFFRQX2M)                   0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[1]/CK (SDFFRQX2M)                   0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[14]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[15]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[14]/CK (SDFFRQX2M)                  0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[14]/Q (SDFFRQX2M)                   0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[15]/SI (SDFFRQX2M)                  0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[15]/CK (SDFFRQX2M)                  0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[13]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[14]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[13]/CK (SDFFRQX2M)                  0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[13]/Q (SDFFRQX2M)                   0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[14]/SI (SDFFRQX2M)                  0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[14]/CK (SDFFRQX2M)                  0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[12]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[13]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[12]/CK (SDFFRQX2M)                  0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[12]/Q (SDFFRQX2M)                   0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[13]/SI (SDFFRQX2M)                  0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[13]/CK (SDFFRQX2M)                  0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[11]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[12]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[11]/CK (SDFFRQX2M)                  0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[11]/Q (SDFFRQX2M)                   0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[12]/SI (SDFFRQX2M)                  0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[12]/CK (SDFFRQX2M)                  0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[10]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[11]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[10]/CK (SDFFRQX2M)                  0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[10]/Q (SDFFRQX2M)                   0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[11]/SI (SDFFRQX2M)                  0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[11]/CK (SDFFRQX2M)                  0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[9]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[10]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[9]/CK (SDFFRQX2M)                   0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[9]/Q (SDFFRQX2M)                    0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[10]/SI (SDFFRQX2M)                  0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[10]/CK (SDFFRQX2M)                  0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+  Startpoint: ALU_RTL/ALU_OUT_reg[8]
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: ALU_RTL/ALU_OUT_reg[9]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_RTL/ALU_OUT_reg[8]/CK (SDFFRQX2M)                   0.00       0.00 r
+  ALU_RTL/ALU_OUT_reg[8]/Q (SDFFRQX2M)                    0.42       0.42 f
+  ALU_RTL/ALU_OUT_reg[9]/SI (SDFFRQX2M)                   0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  ALU_RTL/ALU_OUT_reg[9]/CK (SDFFRQX2M)                   0.00      19.80 r
+  library setup time                                     -0.52      19.28
+  data required time                                                19.28
+  --------------------------------------------------------------------------
+  data required time                                                19.28
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.86
+
+
+1
