@@ -5,7 +5,7 @@ Welcome to the ASIC_Projects repository! This repository contains various projec
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Repository Structure](#ALU /// TCL /// UART System /// Garage)
+- [Repository Structure](Spec docoument For each AISC project and RTL & Backend(SYN&DFT&Formailty) & PnR ) folders 
 
 - [Contact](#zioza2002@gmail.com)
 
@@ -14,4 +14,6 @@ Welcome to the ASIC_Projects repository! This repository contains various projec
 This repository is a collection of projects focused on the design, implementation, and testing of ASICs. Each project includes detailed documentation and source code to help you understand and reproduce the work.
 
 ## Repository Structure
+ 1: Low Power Configurable Multi Clock Digital System
+
 
