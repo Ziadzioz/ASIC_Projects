@@ -14,33 +14,38 @@ Welcome to the ASIC_Projects repository! This repository contains various projec
 This repository is a collection of projects focused on the design, implementation, and testing of ASICs. Each project includes detailed documentation and source code to help you understand and reproduce the work.
 
 ## Repository Structure
- 1:Design and Implementation of a Low Power Configurable Multi Clock Digital System from RTL to GDS
-This project focuses on the design and implementation of a low-power, configurable multi-clock digital system. From the RTL to the GDS stage, the project encapsulates a complete digital IC design flow, emphasizing power optimization and clock configurability.
+1: Design and Implementation of a Low Power Configurable Multi Clock Digital System (RTL to GDS)
+Project Overview
+This project presents the complete design and implementation of a low-power, configurable multi-clock digital system. From RTL to GDS, the focus is on power optimization and clock configurability within a robust digital IC design flow.
 
-Key Features:
-      ALU Operations: Addition, Subtraction, Multiplication, Division, AND, OR, NAND, NOR, XOR, XNOR, CMP, and Shift operations.
-      Register File Operations: Write and read capabilities with specific command frames.
-      System Specifications: REF_CLK at 50 MHz, UART_CLK at 3.6864 MHz, and always-on clock divider.
-      Sequence of Operation
-      Perform configuration via Register File write operations.
-      Master sends various commands (RegFile and ALU operations).
-      Commands are processed by SYS_CTRL after reception through UART_RX.
-      Results are sent back to the master via UART_TX.
-  Project Overview
-      Clock Domain 1 (REF_CLK):
-      RegFile
-      ALU
-      Clock Gating
-      SYS_CTRL
-      Clock Domain 2 (UART_CLK)
-      UART_TX
-      UART_RX
-      PULSE_GEN
-      Clock Dividers
-      Data Synchronizers:
-      RST Synchronizer
-      Data Synchronizer
-      ASYNC FIFO
+Key Features
+ALU Operations: Addition, Subtraction, Multiplication, Division, AND, OR, NAND, NOR, XOR, XNOR, CMP, and Shift operations.
+Register File Operations: Write and read capabilities facilitated through specific command frames.
+System Specifications:
+REF_CLK: 50 MHz
+UART_CLK: 3.6864 MHz
+Always-On Clock Divider
+Sequence of Operation
+Configuration: Performed via Register File write operations.
+Command Execution: The master sends various commands (RegFile and ALU operations).
+Processing: Commands are processed by SYS_CTRL after reception through UART_RX.
+Result Transmission: Results are sent back to the master via UART_TX.
+Clock Domains
+Clock Domain 1 (REF_CLK):
+Register File
+ALU
+Clock Gating
+SYS_CTRL
+Clock Domain 2 (UART_CLK):
+UART_TX
+UART_RX
+PULSE_GEN
+Clock Dividers
+Data Synchronization
+RST Synchronizer
+Data Synchronizer
+ASYNC FIFO
+This structure should work well for your README, providing a clear and concise overview of your project's functionality and features. Let me know if you want to add or modify anything further!
    
       
       
